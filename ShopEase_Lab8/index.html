@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive e-commerce product gallery built with CSS Grid.">
+  <title>ShopEase | Product Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Shop<span>Ease</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="cart" href="#products" aria-label="Shopping cart">Cart <span>0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY EDIT</p>
+        <h1>Find your next<br><span>favorite thing.</span></h1>
+        <p>Thoughtfully picked essentials for work, play, and everything in between.</p>
+        <a class="primary-btn" href="#products">Explore products</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Featured shopping collection">
+        <div class="hero-circle"></div>
+        <div class="hero-label">NEW<br>ARRIVALS</div>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Popular products</h2>
+        </div>
+        <p class="result-count">8 products</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image"><span class="badge">Bestseller</span>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85" alt="Minimal wrist watch" onerror="this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85'">
+          </div>
+          <div class="product-info"><p class="category">Accessories</p><h3>Classic Minimal Watch</h3><div class="product-bottom"><strong>$79.00</strong><button type="button" aria-label="Add Classic Minimal Watch to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><span class="badge sale">-15%</span>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85" alt="Red running sneaker">
+          </div>
+          <div class="product-info"><p class="category">Footwear</p><h3>Urban Runner Sneakers</h3><div class="product-bottom"><strong>$95.00</strong><button type="button" aria-label="Add Urban Runner Sneakers to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85" alt="Wireless headphones">
+          </div>
+          <div class="product-info"><p class="category">Technology</p><h3>Studio Wireless Headphones</h3><div class="product-bottom"><strong>$129.00</strong><button type="button" aria-label="Add Studio Wireless Headphones to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><span class="badge">New</span>
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85" alt="Tan leather handbag">
+          </div>
+          <div class="product-info"><p class="category">Accessories</p><h3>Everyday Leather Tote</h3><div class="product-bottom"><strong>$110.00</strong><button type="button" aria-label="Add Everyday Leather Tote to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=85" alt="Vintage instant camera">
+          </div>
+          <div class="product-info"><p class="category">Technology</p><h3>Instant Film Camera</h3><div class="product-bottom"><strong>$89.00</strong><button type="button" aria-label="Add Instant Film Camera to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=85" alt="Perfume bottle">
+          </div>
+          <div class="product-info"><p class="category">Lifestyle</p><h3>Signature Eau de Parfum</h3><div class="product-bottom"><strong>$64.00</strong><button type="button" aria-label="Add Signature Eau de Parfum to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-150360$​?auto=format&fit=crop&w=800&q=85" alt="Modern home chair" onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=85'">
+          </div>
+          <div class="product-info"><p class="category">Home</p><h3>Modern Comfort Chair</h3><div class="product-bottom"><strong>$180.00</strong><button type="button" aria-label="Add Modern Comfort Chair to cart">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><span class="badge sale">-10%</span>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85" alt="Silver and black wrist watch">
+          </div>
+          <div class="product-info"><p class="category">Accessories</p><h3>Everyday Steel Watch</h3><div class="product-bottom"><strong>$72.00</strong><button type="button" aria-label="Add Everyday Steel Watch to cart">+</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Good finds. Better everyday.</h2>
+      <p>Simple, useful products selected to make daily life a little better.</p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 ShopEase. Created for Web Engineering Lab 8.</p></footer>
+</body>
+</html>
